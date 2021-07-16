@@ -1,6 +1,5 @@
 //requires node file system
 const fs = require("fs");
-const path = require("path");
 //requires node inquirer
 const inquirer = require("inquirer");
 //loads generateMarkdown file in utils
@@ -59,7 +58,7 @@ const questions = [
 ];
 
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     //prints answer object
     inquirer.prompt(questions).then(answers => {
